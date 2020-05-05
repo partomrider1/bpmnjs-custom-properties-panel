@@ -1,0 +1,23 @@
+{
+    "name": "QualityAssurance",
+    "uri": "http://some-company/schema/bpmn/qa",
+    "prefix": "qa",
+    "xml": {
+      "tagAlias": "lowerCase"
+    },
+    "types": [
+      {
+        "name": "CustomServiceTask",
+        "superClass": [ "Element" ],
+        "properties": [
+          {
+            "name": "lambdaLabel",
+            "isAttr": true,
+            "type": "String"
+          }
+        ]
+      }
+    ],
+    "emumerations": [],
+    "associations": []
+  }

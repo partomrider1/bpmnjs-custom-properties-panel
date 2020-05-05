@@ -1,0 +1,65 @@
+.diagram-container {
+    height: 100%;
+    width: 100%;
+}
+
+#canvas {
+    width: 70%;
+    float: left;
+    height:  inherit;
+}
+
+#properties {
+    width: 30%;
+    float: right;
+}
+
+:host .diagram-container  /deep/ .djs-overlay-context-pad .bpmn-icon-service-task {
+    background: url('../../assets/images/lambda-sm.png');
+}
+
+:host .diagram-container  /deep/ .bpmn-icon-service-task {
+    background: url('../../assets/images/lambda.png') no-repeat center;
+    background-size: 30px 30px;
+}
+
+:host .diagram-container  /deep/ .bpmn-icon-service-task::before {
+    content: "";
+}
+
+:host .diagram-container  /deep/ .group[data-group='data-store'] {
+    display: none;
+}
+
+:host .diagram-container  /deep/ .group[data-group='data-object'] {
+    display: none;
+}
+
+/* :host .diagram-container  /deep/ .group .entry.bpmn-icon-task {
+    display: none;
+} */
+
+:host .diagram-container  /deep/ .group .entry.bpmn-icon-intermediate-event-none {
+    display: none;
+}
+
+:host .diagram-container  /deep/ .group .entry.bpmn-icon-subprocess-expanded {
+    display: none;
+}
+
+:host .diagram-container  /deep/ .disabledInput {
+    cursor: not-allowed !important;
+    pointer-events: none !important;
+    color: #808080;
+    background-color: #EBE4E4;
+}
+
+:host .diagram-container  /deep/ .bpp-field-wrapper .clear {
+    display: none;
+}
+
+.exportButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
